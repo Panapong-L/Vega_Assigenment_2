@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {"url": "https://raw.githubusercontent.com/Panapong-L/Vega_Assigenment_2/master/inf_%E0%B8%8A%E0%B8%B8%E0%B8%A1%E0%B8%8A%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%81%E0%B8%97%E0%B8%A1.csv"},
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "num_house",
+      "aggregate": "count",
+      "type":"nominal",
+      "title": "จำนวนครัวเรือน"
+      },
+    "y": {
+      "field": "zone",
+      "type": "nominal",
+      "title": "Zone"
+    },
+    "color": {
+      "field": "ownership",
+      "type": "nominal",
+      "title": "ลักษณะความเป็นเจ้าของ"
+    }
+  },
+  "tooltip":[
+    {"field":"ownership","type":"nominal"},
+    {"field":"num_house","type":"nominal"}
+  ]
+}
